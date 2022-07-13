@@ -22,7 +22,7 @@
 #evaluation-form { 
     display: flex;
     flex-direction: column;  
-    border: solid red 1px;        
+            
     width: 675px;
 }
 main { 
@@ -37,8 +37,4 @@ main {
 #familia { 
     display: flex;
     flex-direction: column;
-}
-#checkbox { 
-    
-
 }
