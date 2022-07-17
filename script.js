@@ -22,3 +22,18 @@ checkbox.addEventListener('click', (e) => {
     button.disabled = true;
   }
 });
+
+// testes a partir daqui.
+
+const limite = document.querySelector('#counter').innerHTML;
+const comment = document.querySelector('textarea');
+
+function characterCounter() {
+  const character = document.getElementById('counter');
+  const characterRestantes = limite - comment.value.length;
+  character.innerHTML = characterRestantes;
+}
+
+comment.addEventListener('keydown', characterCounter);
+comment.addEventListener('keypress', characterCounter);
+comment.addEventListener('keyup', characterCounter);
